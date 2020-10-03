@@ -1,4 +1,6 @@
 # pacman
+Bài 1-->4: Tìm kiếm đường đi tối giữa 2 điểm 
+Bài 5-->6: 
 Bài 1:
 + Depth First Search là một thuật toán duyệt hoặc tìm kiếm một phần tử trên một cấu trúc dữ liệu dạng cây hay một đồ thị.
 
@@ -52,4 +54,13 @@ A* lưu giữ một tập các lời giải chưa hoàn chỉnh, nghĩa là các
 Trong đó, g(x) là chi phí của đường đi cho đến thời điểm hiện tại, nghĩa là tổng trọng số của các cạnh đã đi qua. h(x) là hàm đánh giá heuristic về chi phí nhỏ nhất để đến đích từ x. Ví dụ, nếu "chi phí" được tính là khoảng cách đã đi qua, khoảng cách đường chim bay giữa hai điểm trên một bản đồ là một đánh giá heuristic cho khoảng cách còn phải đi tiếp.
 
 Hàm f(x) có giá trị càng thấp thì độ ưu tiên của x càng cao (do đó có thể sử dụng một cấu trúc heap tối thiểu để cài đặt hàng đợi ưu tiên này).
-Bài 5:
+Bài 5: Yêu cầu dùng Depth First Search chỉ cần trạng thái ban đầu của nó
+Ví dụ một bản đồ cần khoảng 2000 nốt thì con pacman cũng chạy ngần ấy nốt nên khá là ok.
+Bài 6: Yêu cầu sử dụng A* chỉ việc thêm hàm cornersHeuristic 
+Ý tưởng la: Giả thiết rằng pacman có thể đi xuyên tường được 
+Cũng khá giống bài toán người giao hàng 
+Bài 7:
+Tìm được đường đi tối ưu ăn hết thức ăn trên bản đồ (Map này không có quái nên search khá là đơn giản)
+Không phải là tối ưu vì trong trường hợp nó ăn để lại thức ăn ở góc bên trái bỏ lại rồi ăn thức ăn ở góc bên phải rồi cuối cùng lại phải quay lại ăn thức ăn ở góc bên trái cho nên nó không được tối ưu 
+Bài 8: Tìm thức ăn gần vớ trạng thái hiện tại của Pacman nhất 
+
